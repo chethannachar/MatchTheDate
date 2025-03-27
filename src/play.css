@@ -632,7 +632,7 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
 }
-@media(max-width:450px){
+@media(max-width:480px){
     body {
         margin: 0;
         padding: 0;
@@ -737,33 +737,34 @@ body {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+        height: 1200px;
         transition: background-color 0.5s ease, transform 0.3s ease;
         padding: 30px;
         border-radius: 20px;
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
         background: rgba(255, 255, 255, 0.85);
-        width: 295px;
+        width: 395px;
         margin: auto;
         overflow-y: hidden;
         overflow-x: hidden;
+        margin-top: -150px;
       }
      
       
     
     
       h1 {
-        font-size: 1.8rem;
+        font-size: 3rem;
 
         color: #cf0606;
-        margin-top: -100px;
+        margin-top: -400px;
         text-align: center;
         background: linear-gradient(120deg, #07ff62 0%, #8fd3f4 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
         position: relative;
-        margin-top:-20px;
+        margin-top:80px;
         margin-left: 0px;
       }
       
@@ -788,11 +789,11 @@ body {
       .stats {
         display: flex;
         justify-content: space-between;
-        width: 100px;
+        width: 200px;
         margin: 20px 0;
         padding: 5px;
         border-radius: 15px;
-    
+        margin-top: 50px;
     
         transition: transform 0.3s ease-in-out;
     }
@@ -802,7 +803,7 @@ body {
     }
     
     .stats h2 {
-        font-size: 1.1rem;
+        font-size: 1.6rem;
         color: #fff;
         padding: 2px 5px;
         border-radius: 12px;
@@ -811,17 +812,17 @@ body {
         margin-top: 0px;
     }
     .first{
-        margin-left: -80px;
+        margin-left: -85px;
         background: linear-gradient(135deg, #f70c10, #1a0101);
 
     }
     .second{
-        margin-left: 86px;
+        margin-left: 135px;
         background: linear-gradient(135deg, #0ceb04, #012704);
 
     }
     .stats span{
-        margin-left: 32px;
+        margin-left: 40px;
     }
     .stats h2:hover {
         transform: translateY(-3px);
@@ -830,17 +831,17 @@ body {
     .cards {
         display: flex;
         justify-content: space-around;
-        width: 270px;
+        width: 370px;
         margin: 50px auto;
         font-size: 1rem;
         gap: 80px;
-        margin-left: 10px;
-        margin-top: 10px;
+        margin-left: 12px;
+        margin-top: 70px;
     }
     
     .card {
-        width: 250px;
-        height: 120px;
+        width: 350px;
+        height: 220px;
         font-size: 2rem;
         perspective: 1000px; /* Increased for better 3D effect */
         position: relative;
@@ -911,7 +912,7 @@ body {
     
       button {
         padding: 12px 15px;
-        font-size: 1rem;
+        font-size: 1.6rem;
         cursor: pointer;
         background: linear-gradient(120deg, #02fa55 10%, #013333,#013a17 100%);
     
@@ -920,7 +921,7 @@ body {
         border-radius: 22px;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
         transition: all 0.3s ease-in-out;
-        margin-top: -20px;
+        margin-top: 50px;
         position: relative;
         overflow: hidden;
         font-weight: bold;
