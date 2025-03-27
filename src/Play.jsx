@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Play.css";
+import "./play.css";
 
 function Play() {
   const [number1, setNumber1] = useState(0);
