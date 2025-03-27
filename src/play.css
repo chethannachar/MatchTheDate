@@ -1,3 +1,319 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation: gradientAnimation 5s infinite alternate;
+    overflow: hidden;
+    transition: background-color 0.5s ease;
+}
+
+
+
+/* Correct and Incorrect Background Animations */
+.correct-body {
+    background: linear-gradient(120deg, #0e5e06 0%,#1b030d 100%, #08ce19 100%) !important;
+    transition: background-color 0.5s ease;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(56, 4, 4, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: linear-gradient(#022142,#013b17);
+    padding: 20px;
+    width: 450px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slide-down 0.5s ease-out;
+    padding-bottom: 60px;
+    padding-top: 0px;
+  }
+  
+  @keyframes slide-down {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .modal-content h2 {
+    font-size: 2.4rem;
+
+  }
+  
+  .modal-content p {
+    font-size: 2.2rem;
+    margin-top: -5px;
+  }
+  
+  .modal-content button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .modal-content button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+.incorrect-body {
+    background: linear-gradient(120deg, #70070c 0%,#1b030d 100%, #70070c 100%) !important;
+
+   
+    transition: background-color 0.5s ease;
+}
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.85);
+    width: 80%;
+    width: 1900px;
+    margin: auto;
+  }
+  
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+
+
+  h1 {
+    font-size: 3rem;
+    color: #cf0606;
+    margin-top: -100px;
+    text-align: center;
+    background: linear-gradient(120deg, #07ff62 0%, #8fd3f4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-top: -20px;
+  }
+  
+  h1::before, h1::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    background: linear-gradient(120deg, #201903 0%, #fda085 100%);
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  h1::before {
+    left: -60px;
+  }
+  
+  h1::after {
+    right: -60px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px 0;
+    padding: 5px;
+    border-radius: 15px;
+
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.stats:hover {
+    transform: scale(1.03);
+}
+
+.stats h2 {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-top: -20px;
+}
+.first{
+    margin-left: -20px;
+    background: linear-gradient(135deg, #f70c10, #1a0101);
+
+}
+.second{
+    margin-right: -20px;
+    background: linear-gradient(135deg, #0ceb04, #012704);
+
+}
+.stats h2:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+  .cards {
+    display: flex;
+    justify-content: space-around;
+    width: 1200px;
+    margin: 50px auto;
+    font-size: 5rem;
+    gap: 400px;
+    margin-top: 10px;
+  }
+  
+  .card {
+    width: 250px;
+    height: 250px;
+    font-size: 5rem;
+
+    perspective: 1200px;
+    position: relative;
+    transition: transform 0.6s ease-in-out, border-color 0.3s ease-in-out;
+    border-radius: 15px;
+    border: 12px solid #bbb;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+  }
+  
+  .card.match {
+    border-color: #28a745;
+    box-shadow: 0 10px 30px rgba(40, 167, 69, 0.6);
+  }
+  
+  .card.no-match {
+    border-color: #dc3545;
+    box-shadow: 0 10px 30px rgba(220, 53, 69, 0.6);
+  }
+  
+  .card .front,
+  .card .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.6s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card .front {
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    color: #333;
+    border: 2px solid #ddd;
+    font-weight: bold;
+
+  }
+  
+  .card .back {
+    background: linear-gradient(135deg, #a5727e, #0a0302);
+    color: #fff;
+    transform: rotateY(180deg);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 5.8rem;
+
+  }
+  
+  .card.flipped .front {
+    transform: rotateY(180deg);
+  }
+  
+  .card.flipped .back {
+    transform: rotateY(0deg);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  button {
+    padding: 12px 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: linear-gradient(120deg, #02fa55 10%, #013333,#013a17 100%);
+
+    color: #fff;
+    border: none;
+    border-radius: 22px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in-out;
+    margin-top: -50px;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350%;
+    height: 350%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.6s;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    pointer-events: none;
+  }
+  
+  button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  button:hover {
+    background: linear-gradient(120deg, #6e0303, #114601);
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:active {
+    background: linear-gradient(120deg, #1a0556, #0c3cae);
+    transform: scale(1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
 @media(min-width:900px){
 body {
     margin: 0;
@@ -427,7 +743,7 @@ body {
         border-radius: 20px;
         box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
         background: rgba(255, 255, 255, 0.85);
-        width: 195px;
+        width: 295px;
         margin: auto;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -437,7 +753,7 @@ body {
     
     
       h1 {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
 
         color: #cf0606;
         margin-top: -100px;
@@ -495,12 +811,12 @@ body {
         margin-top: 0px;
     }
     .first{
-        margin-left: -65px;
+        margin-left: -80px;
         background: linear-gradient(135deg, #f70c10, #1a0101);
 
     }
     .second{
-        margin-left: 56px;
+        margin-left: 86px;
         background: linear-gradient(135deg, #0ceb04, #012704);
 
     }
@@ -514,11 +830,11 @@ body {
     .cards {
         display: flex;
         justify-content: space-around;
-        width: 230px;
+        width: 270px;
         margin: 50px auto;
         font-size: 1rem;
-        gap: 40px;
-        margin-left: -20px;
+        gap: 80px;
+        margin-left: 10px;
         margin-top: 10px;
     }
     
@@ -673,6 +989,3 @@ body {
       
       
     }
-   
-      }
-     
