@@ -855,7 +855,7 @@ body {
     }
     
     .card {
-        width: 350px;
+        width: 352px;
         height: 220px;
         font-size: 2rem;
         perspective: 1000px; /* Increased for better 3D effect */
@@ -865,7 +865,9 @@ body {
         border: 2px solid #bbb;
         overflow: hidden;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-        background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+        background: black;
+        outline: black;
+
     }
     
     .card.match {
@@ -895,9 +897,13 @@ body {
     
     .card .front {
         background: linear-gradient(145deg,#0a0101,#000000);
-        color: #333;
-        border: 2px solid #ddd;
+        color: white;
+   
+
+        border: 2px solid black;
         font-weight: bold;
+  
+        outline: black;
     }
     
     .card .back { /* Fixed selector */
@@ -946,7 +952,7 @@ body {
         
         letter-spacing: 1px;
         text-transform: uppercase;
-        margin-left: 15px;
+        margin-left: 0px;
       }
         button:active {
             background: linear-gradient(120deg, #6e0303, #114601);
