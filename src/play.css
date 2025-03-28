@@ -532,7 +532,7 @@ body {
     border: 12px solid #bbb;
     overflow: hidden;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    background: linear-gradient(135deg, #ece9e6 0%, #ffffff 100%);
+    background: black;
   }
   
   .card.match {
